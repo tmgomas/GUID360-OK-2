@@ -16,4 +16,13 @@ return [
     'important'                     => 'Important',
     'warning'                       => 'Warning',
     'information'                   => 'Information',
+
+    'account_settings'              => 'ACCOUNT SETTINGS',
+    'user-management'               => 'User Managment',
+    'user'                          => 'User',
+    'role'                          => 'Role',
+    'permission'                    => 'Permission',
+
+    'general-settings'              => 'GENERAL SETTINGS',
+    'company-managment'             => 'Company Managment',
 ];
