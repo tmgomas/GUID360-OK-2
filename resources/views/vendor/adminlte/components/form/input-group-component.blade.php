@@ -1,5 +1,9 @@
 <div class="{{ $makeFormGroupClass() }}">
 
+    @php
+        $setErrorsBag($errors);
+    @endphp
+
     {{-- Input label --}}
     @isset($label)
         <label for="{{ $id }}" @isset($labelClass) class="{{ $labelClass }}" @endisset>
@@ -32,6 +36,13 @@
         </span>
     @endif
 
+
+
+    {{-- Bottom slot --}}
+    @isset($bottomSlot)
+        {{ $bottomSlot }}
+    @endisset
+    
 </div>
 
 {{-- Extra style customization for invalid input groups --}}
