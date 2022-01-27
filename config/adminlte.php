@@ -265,12 +265,12 @@ return [
                 //     'icon'  => 'nav-icon fas fa-user-lock',
                 //     'can'   => 'role.index',
                 // ],
-                // [
-                //     'text' => 'permission',
-                //     'route'  => 'permission.index',
-                //     'icon'     => 'nav-icon fas fa-fingerprint',
-                //     'can'   => 'permission.index',
-                // ],
+                [
+                    'text' => 'permission',
+                    'route'  => 'permission.index',
+                    'icon'     => 'nav-icon fas fa-fingerprint',
+                    'can'   => 'permission.index',
+                ],
                
             ],
         ],
