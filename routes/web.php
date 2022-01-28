@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\PermissionController;
+use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,10 +33,10 @@ Route::group(['middleware' => ['auth', 'permission']], function() {
         Route::get('/', [UserController::class, 'index'])->name('user.index');
     });
     
-    // // Role Routes
-    // Route::group(['prefix' => 'role'], function() {
-    //     Route::get('/', [RoleController::class, 'index'])->name('role.index');
-    // });
+    // Role Routes
+    Route::group(['prefix' => 'role'], function() {
+        Route::get('/', [RoleController::class, 'index'])->name('role.index');
+    });
 
     // Permission Route
     Route::group(['prefix' => 'permission'], function() {

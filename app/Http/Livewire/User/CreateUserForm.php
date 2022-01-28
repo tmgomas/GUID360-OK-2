@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\User;
 
 use App\Models\User;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
 use Spatie\Permission\Models\Role;
@@ -15,7 +16,7 @@ class CreateUserForm extends Component
     public $showEditModal = false; // Model Defult Disply None
 
     public $isActive = false;
-    public $ids, $name, $email, $password, $password_confirmation, $roles;
+    public $ids, $name, $email, $password, $password_confirmation, $roles, $userRole;
 
     protected $listeners = [
         'newForm', 
@@ -99,7 +100,8 @@ class CreateUserForm extends Component
         $this->ids = $User->id;
         $this->name = $User->name;
         $this->email = $User->email;
-        // $this->roles = Role::pluck('name','name')->all();
+
+        $this->roles = Role::pluck('name','name')->all();
         $this->userRole = $User->roles->pluck('name','name')->all();
         // $User->assignRole('Admin');
 		$this->dispatchBrowserEvent('show-form');
@@ -120,6 +122,8 @@ class CreateUserForm extends Component
                     'email'    => $this->email,
                     'password' => $this->password,
                 ]);
+
+                DB::table('model_has_roles')->where('model_id',$this->ids)->delete();
                 $user->assignRole($this->roles);
         
                 $this->resetInput();

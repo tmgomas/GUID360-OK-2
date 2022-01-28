@@ -259,12 +259,12 @@ return [
                     'icon' => 'nav-icon fas fa-users',
                     'can'   => 'user.index',
                 ],
-                // [
-                //     'text' => 'role',
-                //     'route'  => 'role.index',
-                //     'icon'  => 'nav-icon fas fa-user-lock',
-                //     'can'   => 'role.index',
-                // ],
+                [
+                    'text' => 'role',
+                    'route'  => 'role.index',
+                    'icon'  => 'nav-icon fas fa-user-lock',
+                    'can'   => 'role.index',
+                ],
                 [
                     'text' => 'permission',
                     'route'  => 'permission.index',

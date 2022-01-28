@@ -25,7 +25,7 @@
                     <x-adminlte-select2 :config="$config" wire:model="roles" id="roles" name="roles" label="Roles">
                         <option></option>
                         @foreach ($rolesName as $role)
-                            <option value="{{ $role->name }}">{{ $role->name }}</option>
+                            <option value="{{ $role->name }}">{{ $role->name }} </option>
                         @endforeach
                     </x-adminlte-select2>
                 </div>
