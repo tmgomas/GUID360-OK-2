@@ -25,4 +25,10 @@ return [
 
     'general-settings'              => 'GENERAL SETTINGS',
     'company-managment'             => 'Company Managment',
+
+    'state_management'              => 'State Management',
+    'country'                       => 'Country',
+    'province'                      => 'Province',
+    'district'                      => 'District',
+    'city'                          => 'City',
 ];

@@ -145,6 +145,94 @@ class CreateUserPermissionSeeder extends Seeder
             'guard_name' => 'web',
         ]);
 
+        // Country Permission
+        
+        $permission = Permission::create([
+            'name'       => 'country.index', 
+            'name_group' => 'country',
+            'guard_name' => 'web',
+        ]);
+
+        $permission = Permission::create([
+            'name'       => 'country.create', 
+            'name_group' => 'country',
+            'guard_name' => 'web',
+        ]);
+
+        $permission = Permission::create([
+            'name'       => 'country.store', 
+            'name_group' => 'country',
+            'guard_name' => 'web',
+        ]);
+
+        $permission = Permission::create([
+            'name'       => 'country.show', 
+            'name_group' => 'country',
+            'guard_name' => 'web',
+        ]);
+
+        $permission = Permission::create([
+            'name'       => 'country.edit', 
+            'name_group' => 'country',
+            'guard_name' => 'web',
+        ]);
+
+        $permission = Permission::create([
+            'name'       => 'country.update',
+            'name_group' => 'country', 
+            'guard_name' => 'web',
+        ]);
+
+        $permission = Permission::create([
+            'name'       => 'country.destroy', 
+            'name_group' => 'country',
+            'guard_name' => 'web',
+        ]);
+
+        // Province Permission
+        
+        $permission = Permission::create([
+            'name'       => 'province.index', 
+            'name_group' => 'province',
+            'guard_name' => 'web',
+        ]);
+
+        $permission = Permission::create([
+            'name'       => 'province.create', 
+            'name_group' => 'province',
+            'guard_name' => 'web',
+        ]);
+
+        $permission = Permission::create([
+            'name'       => 'province.store', 
+            'name_group' => 'province',
+            'guard_name' => 'web',
+        ]);
+
+        $permission = Permission::create([
+            'name'       => 'province.show', 
+            'name_group' => 'province',
+            'guard_name' => 'web',
+        ]);
+
+        $permission = Permission::create([
+            'name'       => 'province.edit', 
+            'name_group' => 'province',
+            'guard_name' => 'web',
+        ]);
+
+        $permission = Permission::create([
+            'name'       => 'province.update',
+            'name_group' => 'province', 
+            'guard_name' => 'web',
+        ]);
+
+        $permission = Permission::create([
+            'name'       => 'province.destroy', 
+            'name_group' => 'province',
+            'guard_name' => 'web',
+        ]);
+
         // Company Permission
         
         $permission = Permission::create([

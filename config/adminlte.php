@@ -239,7 +239,40 @@ return [
         ],
         
         ['header' => 'general-settings'],
+        
 
+        [
+            'text'    => 'state_management',
+            'icon'    => 'nav-icon fas fa-globe',
+            'submenu' => [
+                [
+                    'text' => 'country',
+                    'route'  => 'country.index',
+                    'icon' => 'nav-icon fas fa-angle-double-right',
+                    // 'can'   => 'country.index',
+                ],
+
+                [
+                    'text' => 'province',
+                    'route'  => 'province.index',
+                    'icon' => 'nav-icon fas fa-angle-double-right',
+                    // 'can'   => 'country.index',
+                ],
+                [
+                    'text' => 'district',
+                    'route'  => 'district.index',
+                    'icon' => 'nav-icon fas fa-angle-double-right',
+                    // 'can'   => 'country.index',
+                ],
+
+                [
+                    'text' => 'city',
+                    'route'  => 'city.index',
+                    'icon' => 'nav-icon fas fa-angle-double-right',
+                    // 'can'   => 'country.index',
+                ],
+            ],
+        ],
         // [
         //     'text' => 'company-managment',
         //     'route'  => 'company.index',
