@@ -238,41 +238,82 @@ return [
             'text' => 'search',
         ],
         
-        ['header' => 'general-settings'],
+        ['header' => 'system_managment'],
         
-
         [
-            'text'    => 'state_management',
-            'icon'    => 'nav-icon fas fa-globe',
+            'text'    => 'general-settings',
+            'icon'    => 'nav-icon fas fa-toolbox',
             'submenu' => [
                 [
-                    'text' => 'country',
-                    'route'  => 'country.index',
-                    'icon' => 'nav-icon fas fa-angle-double-right',
+                    'text' => 'nationality',
+                    'route'  => 'nationality.index',
+                    'icon' => 'nav-icon fas fa-flag',
                     // 'can'   => 'country.index',
                 ],
 
                 [
-                    'text' => 'province',
-                    'route'  => 'province.index',
-                    'icon' => 'nav-icon fas fa-angle-double-right',
-                    // 'can'   => 'country.index',
-                ],
-                [
-                    'text' => 'district',
-                    'route'  => 'district.index',
-                    'icon' => 'nav-icon fas fa-angle-double-right',
+                    'text' => 'language',
+                    'route'  => 'language.index',
+                    'icon' => 'nav-icon fas fa-language',
                     // 'can'   => 'country.index',
                 ],
 
                 [
-                    'text' => 'city',
-                    'route'  => 'city.index',
-                    'icon' => 'nav-icon fas fa-angle-double-right',
+                    'text' => 'religion',
+                    'route'  => 'religion.index',
+                    'icon' => 'nav-icon fas fa-praying-hands',
                     // 'can'   => 'country.index',
+                ],
+
+                [
+                    'text' => 'title',
+                    'route'  => 'title.index',
+                    'icon' => 'nav-icon fas fa-heading',
+                    // 'can'   => 'country.index',
+                ],
+                [
+                    'text' => 'gender',
+                    'route'  => 'gender.index',
+                    'icon' => 'nav-icon fas fa-venus-mars',
+                    // 'can'   => 'country.index',
+                ],
+
+
+                [
+                    'text'    => 'state_management',
+                    'icon'    => 'nav-icon fas fa-globe',
+                    'submenu' => [
+                        [
+                            'text' => 'country',
+                            'route'  => 'country.index',
+                            'icon' => 'nav-icon fas fa-angle-double-right',
+                            // 'can'   => 'country.index',
+                        ],
+        
+                        [
+                            'text' => 'province',
+                            'route'  => 'province.index',
+                            'icon' => 'nav-icon fas fa-angle-double-right',
+                            // 'can'   => 'country.index',
+                        ],
+                        [
+                            'text' => 'district',
+                            'route'  => 'district.index',
+                            'icon' => 'nav-icon fas fa-angle-double-right',
+                            // 'can'   => 'country.index',
+                        ],
+        
+                        [
+                            'text' => 'city',
+                            'route'  => 'city.index',
+                            'icon' => 'nav-icon fas fa-angle-double-right',
+                            // 'can'   => 'country.index',
+                        ],
+                    ],
                 ],
             ],
         ],
+        
         // [
         //     'text' => 'company-managment',
         //     'route'  => 'company.index',

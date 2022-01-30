@@ -8,14 +8,15 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Permission\Traits\HasRoles;
 use Wildside\Userstamps\Userstamps;
 
-class Nationality extends Model
+class Title extends Model
 {
-    use HasFactory, HasRoles, SoftDeletes, Userstamps;
+    use HasFactory, HasRoles, Userstamps, SoftDeletes;
+
 
     protected $fillable = [
-        'nati_en_short_name',
-        'nationality',
-        'nationaliti_isActive',
+        'titles_name',
+        'titles_isActive',
     ];
-    protected $primaryKey = 'nati_id';
+
+    protected $primaryKey ='titles_id';
 }

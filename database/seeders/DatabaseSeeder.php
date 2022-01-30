@@ -21,7 +21,10 @@ class DatabaseSeeder extends Seeder
             CreateDistrictSeeder::class,
             CreateCitySeeder::class,
             CreateNationalitiesSeeder::class,
-            CreateLanguagesSeeder::class
+            CreateLanguagesSeeder::class,
+            CreateReligionSeeder::class,
+            CreateTitleSeeder::class,
+            CreateGenderSeeder::class,
         ]);
     }
 }

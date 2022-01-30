@@ -18,17 +18,25 @@ return [
     'information'                   => 'Information',
 
     'account_settings'              => 'ACCOUNT SETTINGS',
-    'user-management'               => 'User Managment',
+    'user-management'               => 'User Management',
     'user'                          => 'User',
     'role'                          => 'Role',
     'permission'                    => 'Permission',
 
-    'general-settings'              => 'GENERAL SETTINGS',
-    'company-managment'             => 'Company Managment',
+    'system_managment'              => 'SYSTEM MANAGEMENT',
+
+    'general-settings'              => 'General Settings',
+    'nationality'                   => 'Nationality',
+    'language'                      => 'Language',
+    'religion'                      => 'Religion',
+    'title'                         => 'Title',
+    'gender'                        => 'Gender',
 
     'state_management'              => 'State Management',
     'country'                       => 'Country',
     'province'                      => 'Province',
     'district'                      => 'District',
     'city'                          => 'City',
+
+
 ];
